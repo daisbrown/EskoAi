@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  eskoai-frontend:
+    build: . # Build the image from the Dockerfile in the current directory
+    container_name: eskoai-frontend-app # Custom container name
+    ports:
+      - "8787:3000" # Map host port 8787 to container port 3000 (where 'serve' runs)
+    restart: unless-stopped # Restart policy
+    # Optional: Add volumes for persistent data if your app needed it in the future
+    # volumes:
+    #   - ./persistent_data:/app/data # Example: Map a local dir to /app/data inside container
+
+# Optional: Define named volumes if needed elsewhere
+# volumes:
+#   persistent_data:

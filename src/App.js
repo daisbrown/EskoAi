@@ -50,7 +50,7 @@ function App() {
   const textAreaRef = useRef(null);
 
   // --- N8N Webhook URL ---
-  const n8nWebhookUrl = "http://10.250.241.12:5678/webhook/80f3e8d4-8ae0-4c8d-a1b1-3376e4349b0d"; // Your URL
+  const n8nWebhookUrl = "https://10.250.241.12:5678/webhook/39278d4e-8a45-4f0b-bbee-ea06a0f05e0e"; // Your URL
 
   // --- Effects ---
   useEffect(() => {
